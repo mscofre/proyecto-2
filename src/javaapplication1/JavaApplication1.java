@@ -22,21 +22,23 @@ public class JavaApplication1 {
         System.out.print("Ingrese la cantidad de prendas: ");
         prendas = sc.nextInt();
         for (int i = 0; i < prendas; i++) {
-            System.out.print("Ingrese el valor de la prenda " +(i+1)+":");
+            System.out.print("Ingrese el valor de la prenda " +(i+1)+": ");
             valor_p =sc.nextDouble();
             sub_total = sub_total + valor_p ; 
         }
-        if (sub_total >= 100) {
+        if (sub_total >= 300) {
             descuento = sub_total * 0.1 ;
         }else if (sub_total >= 200) {
             descuento = sub_total *0.15 ;
-        }else if (sub_total >= 300) {
+        }else if (sub_total >= 100) {
             descuento = sub_total * 0.2 ;
         }else{
             descuento = sub_total * 0 ;
         }
         total = sub_total- descuento;
-        System.out.println("El valor total es: ");    
+        System.out.println("El valor sin descuento es: " + sub_total);
+        System.out.println("El descuento aplicado es: " +descuento);
+        System.out.println("El valor total es: "+ total );    
     }
     
 }
