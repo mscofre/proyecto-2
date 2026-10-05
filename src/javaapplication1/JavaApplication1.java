@@ -32,6 +32,8 @@ public class JavaApplication1 {
             descuento = sub_total *0.15 ;
         }else if (sub_total >= 300) {
             descuento = sub_total * 0.2 ;
+        }else{
+            descuento = sub_total * 0 ;
         }
         total = sub_total- descuento;
         System.out.println("El valor total es: ");    
