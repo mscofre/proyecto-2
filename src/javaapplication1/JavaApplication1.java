@@ -39,6 +39,7 @@ public class JavaApplication1 {
         System.out.println("El valor sin descuento es: " + sub_total);
         System.out.println("El descuento aplicado es: " +descuento);
         System.out.println("El valor total es: "+ total );    
+        sc.close();
     }
     
 }
